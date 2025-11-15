@@ -1,0 +1,20 @@
+{
+  "llvm-target": "avr-atmega328p",
+  "data-layout": "e-P1-p:16:8-i8:8-i16:8-i32:8-i64:8-f32:8-f64:8-n8-a:8",
+  "arch": "avr",
+  "target-endian": "little",
+  "target-pointer-width": "16",
+  "target-c-int-width": "16",
+  "os": "none",
+  "env": "",
+  "vendor": "unknown",
+  "linker-flavor": "gcc",
+  "pre-link-args": {
+    "gcc": ["-mmcu=atmega328p"]
+  },
+  "exe-suffix": ".elf",
+  "eh-frame-header": false,
+  "panic-strategy": "abort",
+  "disable-redzone": true,
+  "features": "+avr6,+move"
+}
